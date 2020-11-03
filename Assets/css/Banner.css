@@ -1,0 +1,271 @@
+.logo-app{
+    position: absolute;
+    background-image: url("../Images/Banner/logo_transparent@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 189px;
+    height: 189px;
+    top: 0px;
+    left:0px;
+    margin-left: 72px;
+    z-index: 4 !important;
+}
+.behind-nav {
+    position: relative;
+    right: 0px !important;
+}
+.banner {
+    position: absolute;
+    background-image: url("../Images/Banner/yellow-Brush.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1423.96px;
+    height: 896.88px;
+    right: -100px !important;
+    z-index: -1;
+}
+.img-decor-banner{
+    position: absolute;
+    top:-158px;
+    left:190px;
+    z-index: 1 !important;
+}
+.pink-circle-decor{
+    position: absolute;
+    background-image: url("../Images/Banner/pink-ball-shadow2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#circle-1{
+    position: absolute;
+    background-image: url("../Images/Banner/haf-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 433px;
+    height:400px;
+    left: -220px !important;
+    top: 222px;
+    z-index: -1;
+}
+#circle-2{
+    width: 302px;
+    height:306px;
+    top: 792px;
+    right: 848px;
+    z-index: 1;
+}
+#circle-3{
+    width: 302px;
+    height:306px;
+    top: 75px;
+    right: 847px;
+    z-index: 0 !important;
+    transform: rotate(30deg);
+}
+#circle-4{
+    width: 166px;
+    height:166px;
+    top: 75px;
+    right: 847px;
+    z-index: -1 !important;
+}
+#circle-5{
+    width: 302px;
+    height:306px;
+    top: -85px;
+    left: 1024px;
+    z-index: 0 !important;
+    transform: rotate(30deg);
+}
+#circle-6{
+    width: 100px;
+    height:100px;
+    top: 764px;
+    left: 1230px;
+    z-index: 0 !important;
+    transform: rotate(30deg);
+}
+#circle-7{
+    width: 166px;
+    height:166px;
+    top: 811px;
+    left: 53px;
+    z-index: 0 !important;
+    transform: rotate(30deg);
+}
+.girl-circle-decor{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#girl-1{
+    background-image: url("../Images/Banner/girl1-2x.png");
+    width: 150px;
+    height: 150px;
+    top: 724.16px;
+    left: 164px;
+    z-index: 2;
+}
+#girl-2{
+    background-image: url("../Images/Banner/girl2-2x.png");
+    width: 150px;
+    height: 150px;
+    top: 503px;
+    left: 1175px;
+    z-index: 2;
+}
+#girl-3{
+    background-image: url("../Images/Banner/girl3-2x.png");
+    width: 150px;
+    height: 150px;
+    top: 229.99px;
+    left: 1123px;
+    z-index: 2;
+}
+#girl-4{
+    background-image: url("../Images/Banner/girl4-2x.png");
+    width: 150px;
+    height: 150px;
+    top: 680.45px;
+    left: 1054px;
+    z-index: 2;
+}
+#girl-5{
+    background-image: url("../Images/Banner/girl5-2x.png");
+    width: 140px;
+    height: 140px;
+    top: 466px;
+    left: 969px;
+    z-index: 2;
+}
+#girl-6{
+    background-image: url("../Images/Banner/girl6-2x.png");
+    width: 150px;
+    height: 150px;
+    top: 604.38px;
+    left: 412px;
+    z-index: 2;
+}
+.big-slogan{
+   position: absolute;
+   font-family: MuseoSlab700; 
+   font-size: 55px;
+   color: black;
+   top: 197px;
+   left: 261px;
+   line-height: 66px;
+}
+.small-slogan{
+    position: absolute;
+    font-family: Poppins; 
+    font-size: 17px;
+    color: black;
+    top: 446px;
+    left: 261px;
+    line-height: 26px;
+ }
+ .dropdown-banner{
+    position: absolute;
+    font-family: MuseoSlab700 !important;
+    font-size: 20px !important;
+ }
+ .dropdown-banner{
+    top: 589px;
+    left: 261px;
+    width: 542px !important;
+ }
+ .dropdown-banner button{
+    position: relative;
+    background-color: #FFFFFF;
+    border-bottom: #FF0000 4px solid;
+    border-radius: 5px;
+    width: 442px;
+    height: 54px;
+    text-align: left;
+    font-size: 20px !important;
+
+ }
+ .dropdown-banner .dropdown-menu{
+    width: 442px;
+    font-size: 20px !important;
+ }
+ #dropdownMenuButton::after{
+     position: relative;
+     overflow: auto;
+     color: #950D0D;
+     font-size: 32px;
+     left: 68% !important;
+     vertical-align: middle !important;
+ }
+ .input-url{
+    width: 542px;
+ }
+ .icon-input-url{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+ }
+ #form-banner{
+    position: absolute;
+    font-family: MuseoSlab700 !important;
+    font-size: 20px !important;
+    top: 655px;
+    left: 261px;
+ }
+ .input-url-element{
+    color: black !important;
+    background-color: #FFFFFF;
+    border-bottom:4px #FF0000  solid;
+    border-radius: 5px;
+    width: 442px;
+    height: 54px;
+    text-align: left;
+    font-size: 20px !important;
+    
+ }
+ .submit-btn{
+     font-family: Poppins;
+     line-height: 30px;
+     text-align: center;
+     text-transform: uppercase;
+     border-radius: 8px;
+     background-color: white;
+     color: black;
+     border:3px #CD3D76  solid;
+     width: 153px;
+     height: 54px;
+     font-size: 20px !important;
+ }
+ .icon-search{
+     width: 32px;
+     height: 32px;
+     float: right;
+ }
+ .btn-group{
+     position: absolute;
+     top: 71px;
+     left: 1050px;
+ }
+ .sign-in-btn,.sign-up-btn{
+    font-family: PoppinsSemiBold;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-size: 20px !important;
+}
+ .sign-up-btn{
+     background-color: #CD3D76;
+     color: white;
+ }
+ 
+ .sign-in-btn{
+     background-color: white;
+     color: black;
+     border: 1px rgba(128, 128, 128, 0.418) solid;
+ }
+ .sign-in-btn:hover{
+    background-color: wheat;
+
+ }

@@ -1,0 +1,25 @@
+body
+{
+    margin: 0;
+    font-size: 1rem;
+    color: #707070;
+    max-width: 1920px;
+}
+/*----------------------------- Set font -----------------------------*/
+@font-face {
+    font-family: MuseoSlab700;
+    src: url("../fonts/Museo_Slab_700.otf") format("opentype");
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url("../fonts/Poppins-SemiBold.otf") format("opentype");
+}
+/* End  font  setting*/
+header{
+    position: relative;
+    margin: auto;
+}

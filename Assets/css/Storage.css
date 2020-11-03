@@ -1,0 +1,114 @@
+.storage-container,.profile-container {
+    position: relative;
+    background-image: url("../Images/Store/colorGradient@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2000px;
+}
+
+#you-can-find-downloaded-stuff-here{
+    width: 87.2rem;
+    height: 15.8rem;
+}
+
+.wrapper-storage-profile{
+    margin-left: 4.2rem !important;
+    margin-right: 4.2rem !important;
+}
+
+.downloaded-img{
+    width: 16.5rem;
+    height: 17.1rem;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.rightest-downloaded-img{
+    margin-right: 0;
+}
+
+.leftest-downloaded-img{
+    margin-left: 0;
+}
+
+#info-container, #storage-container{
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+
+    padding: 1.5rem 0;
+
+    width: 101.1rem;
+    height: 45rem;
+}   
+
+#storage-container{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+}
+
+input{
+    border-bottom: solid 0.2rem rgb(204, 1, 1) !important;
+}
+.btn-apply{
+    background-color: #212B36 !important;
+    color: white !important;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.selected-customized-btn{
+    box-shadow: 0.3rem 0.4rem 0.5rem grey;
+    position:relative;
+    z-index:1;
+}
+
+.customized-btn{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+    
+    background-color: white;
+    border: 0.1rem solid #8d8b8b;
+    color: #0A0A0A;
+
+    padding-top: 1rem;
+
+    width: 9.9rem;
+    height: 8.4rem;
+}
+
+.icon-customized-btn{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.wrapper-customized-btn{
+    position: relative;
+    left: -30px;
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+}
+
+.avatar-img{
+    
+    width: 9.25rem;
+    height: 9.25rem;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 50%!important;
+}
+
+.form-group{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+}
+
+#left-side{
+    border-right: solid 0.2rem #707070;
+}
