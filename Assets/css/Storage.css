@@ -3,7 +3,6 @@
     background-image: url("../Images/Store/colorGradient@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 2000px;
 }
 
 #you-can-find-downloaded-stuff-here{
@@ -61,22 +60,30 @@ input{
 }
 
 .selected-customized-btn{
-    box-shadow: 0.3rem 0.4rem 0.5rem grey;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.164);
     position:relative;
     z-index:1;
+}
+.customized-btn::after {
+    content: '';
+    background-image: url("../Images/Store/polygon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 40px;
+    height: 65px;
+    left: 33px;
+    top: 23px;
 }
 
 .customized-btn{
     display: flex !important;
     flex-flow: column wrap !important;
+    justify-content: center;
     align-items: center !important;
-    
     background-color: white;
-    border: 0.1rem solid #8d8b8b;
     color: #0A0A0A;
-
     padding-top: 1rem;
-
     width: 9.9rem;
     height: 8.4rem;
 }

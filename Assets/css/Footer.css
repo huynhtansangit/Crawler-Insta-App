@@ -1,25 +1,11 @@
-@font-face {
-    font-family: semiBold;
-    src: url(/Assets/Font/Montserrat-SemiBold.otf);
-}
 
-@font-face {
-    font-family: regular;
-    src: url(/Assets/Font/Roboto-Regular.ttf);
-}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-footer{
-    background-image: url("/Assets/images/Footer/Path\ 15.png");
+.footer-container{
+    background-image: url("/Assets/images/Footer/background-footer.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-    width: 100%;
+    background-position: right;
+    position: relative;
 }
 .parent-menu{
     font-family: semiBold;
@@ -41,8 +27,7 @@ footer{
     align-items: center !important;
 }
 
-.contact-icon{
-}
+
 
 .child-menu{
     margin: 5rem 0 !important;

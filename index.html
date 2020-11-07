@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="Assets/css/Banner.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Gallery.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Storage.css" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="Assets/css/Footer.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- JS -->
     <script src="Assets/js/jquery-3.5.1.js"></script>
     <script src="Assets/js/popper.min.js"></script>
     <script src="Assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
 </head>
 
 <body>
@@ -73,7 +72,9 @@
             </div>
         </nav>
         <!-- Navigation bar -->
-        <div class="behind-nav " style="position: relative;">
+    </header>
+    <section id="banner-section">
+        <div class="banner-container">
             <div class="logo-app">
             </div>
             <div class=" banner">
@@ -146,162 +147,233 @@
                         src="/Assets/Images/Banner/btnIconSearch.png" alt="icon-search"></button>
             </form>
         </div>
-    </header>
-    <div class="gallery-container">
-        <div class="row">
-            <div class="photo-btn col-sm active-gallery-btn">
-                <i class="fas fa-image"></i>
-                <span class="text-btn">Photos</span>
+    </section>
+    <section id="gallery-section">
+        <div class="gallery-container text-center">
+            <div class="d-inline-block">
+                <div class="wonderful-gift-title text-left"
+                    style="font-family: Pristina; font-size: 48px; letter-spacing: 4px;">Your Gallery</div>
+                <h2 class="text-left slogan-title text-uppercase" style="letter-spacing: 4px;">Let enjoy yourself</h2>
             </div>
-            <div class="video-btn col-sm active-gallery-btn">
-                <i class="far fa-file-video"></i>
-                <span class="text-btn">Videos</span>
+            <div class="row">
+                <div class="photo-btn col-sm active-gallery-btn">
+                    <i class="fas fa-image"></i>
+                    <span class="text-btn">Photos</span>
+                </div>
+                <div class="video-btn col-sm active-gallery-btn">
+                    <i class="far fa-file-video"></i>
+                    <span class="text-btn">Videos</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 40px !important; width: 100%;">
+                <div class="col-7 image-video-container ">
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/1.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/2.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/3.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/4.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/5.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/6.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/7.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/8.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/9.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Assets/Images/Gallery/10.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4 info-container offset-1" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    <div class="avt-container">
+                        <img width="160" height="160" src="Assets/Images/Gallery/avtImg.png" alt="avatar-image">
+                    </div>
+                    <div
+                        style=" display: flex;justify-content: center; align-items: center; margin-top:30px;">
+                        <i style="padding-right: 15px;" class="fab fa-instagram"></i>hunghung.cule.567</div>
+                    <p style="font-size: 26px; padding-top: 49px; font-weight: bold;">Available items</p>
+                    <div class="number-of-images-available" style="font-weight: bold; padding-top:43px; color: #154B61; font-size: 35px;">
+                        432
+                    </div>
+                    <button style="margin-top: 50px; text-transform: uppercase; font-family: Poppins; padding:10px; background-color: #CD3D76;" type="button" class="btn btn-danger">sign in to download</button>
+                    </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 40px !important; ">
-            <div class="col-7 image-video-container">
-                <div class="row" >
-                    <div class="column">
-                        <img src="Assets/Images/Gallery/1.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/2.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/3.png" style="width:100%">
-                        
+    </section>
+    <section>
+        <div class="storage-container">
+            <img id="you-can-find-downloaded-stuff-here" src="Assets/Images/Store/Mask-Group-2-Copy.png"
+                alt="All downloaded picture here">
+            <div class="row wrapper-storage-profile mx-auto">
+                <div class="col-1 p-0 wrapper-customized-btn">
+                    <img class="avatar-img mb-3" src="Assets/Images/Store/anna-kendrick.jpg" alt="avatar">
+                    <p style="border-top: #154B61 0.2rem solid; padding-top: 0.5rem ;">Hi, I am AI</p>
+                    <div class="customized-btn">
+                        <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle -2.png" alt="profile">
+                        <p>Your profile</p>
                     </div>
-                    <div class="column">
-                        <img src="Assets/Images/Gallery/4.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/5.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/6.png" style="width:100%">
-                       
+                    <!-- selected-customized-btn để thể hiện nút được chọn -->
+                    <div class="customized-btn selected-customized-btn">
+                        <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle 34.png" alt="Images">
+                        <p>Instag of <br> your own</p>
                     </div>
-                    <div class="column">
-                        <img src="Assets/Images/Gallery/7.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/8.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/9.png" style="width:100%">
-                        
-                    </div>
-                    <div class="column">
-                        <img src="Assets/Images/Gallery/10.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/11.png" style="width:100%">
-                        <img src="Assets/Images/Gallery/12.png" style="width:100%">
-                        
+                    <div class="customized-btn">
+                        <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
+                        <p>Instag videos <br> of your own</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-5 info-container">
-                
-            </div>
-        </div>
-    </div>
-    <div class="storage-container">
-        <img id="you-can-find-downloaded-stuff-here" src="Assets/Images/Store/Mask-Group-2-Copy.png" alt="All downloaded picture here">
-        <div class="row wrapper-storage-profile mx-auto">
-            <div class="col-1 p-0 wrapper-customized-btn">
-                <img class="avatar-img mb-3" src="Assets/Images/Store/anna-kendrick.jpg" alt="avatar">
-                <p style="border-top: #154B61 0.2rem solid; padding-top: 0.5rem ;">Hi, I am AI</p>
-                <div class="customized-btn">
-                    <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle -2.png" alt="profile">
-                    <p>Your profile</p>
-                </div>
-                <!-- selected-customized-btn để thể hiện nút được chọn -->
-                <div class="customized-btn selected-customized-btn">
-                    <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle 34.png" alt="Images">
-                    <p>Instag of your own</p> 
-                </div>
-                <div class="customized-btn">
-                    <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
-                    <p>Instag videos of your own</p> 
-                </div>
-            </div>
-            <div class="col-11" id="storage-container">
-                <div class="row mt-2 mb-4 pb-5" style="border-bottom: #707070 solid 0.2rem;">
-                    <!-- Tận cùng bên trái thì margin left = 0, tương tự bên phải. -->
-                    <img class="downloaded-img " src="Assets/Images/Gallery/1.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/2.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/3.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/4.png" >
-                    <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/5.png" >
-                    
-                </div>
-                <div class="row mt-4 mb-2">
-                    <img class="downloaded-img leftest-downloaded-img" src="Assets/Images/Gallery/6.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/7.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/8.png" >
-                    <img class="downloaded-img" src="Assets/Images/Gallery/9.png" >
-                    <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/10.png" ></div>
-            </div>
-        </div>
-    </div>
-    <div class="profile-container">
-        <img id="you-can-find-downloaded-stuff-here" src="/Assets/Images/Store/Mask-Group-2-Copy.png" alt="All downloaded picture here">
-        <div class="row wrapper-storage-profile mx-auto">
-            <div class="col-1 p-0 wrapper-customized-btn">
-                <img class="avatar-img mb-3" src="/Assets/Images/Store/anna kendrick.jpg" alt="avatar">
-                <p style="border-top: #154B61 0.2rem solid; padding-top: 0.5rem ;">Hi, I am AI</p>
-                <div class="customized-btn selected-customized-btn">
-                    <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle -2.png" alt="profile">
-                    <p>Your profile</p>
-                </div>
-                <div class="customized-btn">
-                    <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 34.png" alt="Images">
-                    <p>Instag Images of your own</p> 
-                </div>
-                <div class="customized-btn">
-                    <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
-                    <p>Instag videos of your own</p> 
-                </div>
-            </div>
-            <div class="col-11" id="info-container">
-                <div class="row">
-                    <div id="left-side" class="col-6" >
-                        <form class="form-group">
-                            <div class="row mt-2 w-75 ">
-                                <label for="first_name">First name</label>
-                                <input class="w-100 form-control" type="text" name="first_name"
-                                    id="first_name">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="last_name">Last name</label>
-                                <input class="w-100 form-control" type="text" name="last_name" id="last_name">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="birthday">Birthday</label>
-                                <input class="w-100 form-control" type="date" name="birthday" id="birthday">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="phone">Phone</label>
-                                <input class="w-100 form-control" type="text" name="phone" id="phone">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="email">Email</label>
-                                <input class="w-100 form-control" type="text" name="email" id="email">
-                            </div>
-                            <button id="btn-apply-profile" class="btn-apply rounded">Apply</button>
-                        </form>
+                <div class="col-11" id="storage-container">
+                    <div class="row mt-2 mb-4 pb-5" style="border-bottom: #707070 solid 0.2rem;">
+                        <!-- Tận cùng bên trái thì margin left = 0, tương tự bên phải. -->
+                        <img class="downloaded-img " src="Assets/Images/Gallery/1.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/2.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/3.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/4.png">
+                        <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/5.png">
+    
                     </div>
-                    <div id="right-side" class="col-6">
-                        <form class="form-group">
-                            <div class="row mt-2 w-75 ">
-                                <label for="current_password">Current password</label>
-                                <input class="w-100 form-control border-right-danger" type="text" name="current_password"
-                                    id="current_password">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="new_password1">New password</label>
-                                <input class="w-100 form-control" type="text" name="new_password1" id="new_password1">
-                            </div>
-                            <div class="row mt-2 w-75 ">
-                                <label for="new_password2">Confirm new password</label>
-                                <input class="w-100 form-control" type="text" name="new_password2" id="new_password2">
-                            </div>
-                            <button id="btn_change_password w-100" class="btn-apply rounded">Change Password</button>
-                        </form>
-                    </div>
+                    <div class="row mt-4 mb-2">
+                        <img class="downloaded-img leftest-downloaded-img" src="Assets/Images/Gallery/6.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/7.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/8.png">
+                        <img class="downloaded-img" src="Assets/Images/Gallery/9.png">
+                        <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/10.png"></div>
                 </div>
             </div>
         </div>
-
-
-    </div>
+    </section>
+    <section>
+        <div class="profile-container">
+            <img id="you-can-find-downloaded-stuff-here" src="/Assets/Images/Store/Mask-Group-2-Copy.png"
+                alt="All downloaded picture here">
+            <div class="row wrapper-storage-profile mx-auto">
+                <div class="col-1 p-0 wrapper-customized-btn">
+                    <img class="avatar-img mb-3" src="/Assets/Images/Store/anna kendrick.jpg" alt="avatar">
+                    <p style="border-top: #154B61 0.2rem solid; padding-top: 0.5rem ;">Hi, I am AI</p>
+                    <div class="customized-btn selected-customized-btn">
+                        <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle -2.png" alt="profile">
+                        <p>Your profile</p>
+                    </div>
+                    <div class="customized-btn">
+                        <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 34.png" alt="Images">
+                        <p>Instag Images </br> of your own</p>
+                    </div>
+                    <div class="customized-btn">
+                        <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
+                        <p>Instag videos <br> of your own</p>
+                    </div>
+                </div>
+                <div class="col-11" id="info-container">
+                    <div class="row">
+                        <div id="left-side" class="col-6">
+                            <form class="form-group">
+                                <div class="row mt-2 w-75 ">
+                                    <label for="first_name">First name</label>
+                                    <input class="w-100 form-control" type="text" name="first_name" id="first_name">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="last_name">Last name</label>
+                                    <input class="w-100 form-control" type="text" name="last_name" id="last_name">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="birthday">Birthday</label>
+                                    <input class="w-100 form-control" type="date" name="birthday" id="birthday">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="phone">Phone</label>
+                                    <input class="w-100 form-control" type="text" name="phone" id="phone">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="email">Email</label>
+                                    <input class="w-100 form-control" type="text" name="email" id="email">
+                                </div>
+                                <button id="btn-apply-profile" class="btn-apply rounded">Apply</button>
+                            </form>
+                        </div>
+                        <div id="right-side" class="col-6">
+                            <form class="form-group">
+                                <div class="row mt-2 w-75 ">
+                                    <label for="current_password">Current password</label>
+                                    <input class="w-100 form-control border-right-danger" type="text"
+                                        name="current_password" id="current_password">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="new_password1">New password</label>
+                                    <input class="w-100 form-control" type="text" name="new_password1" id="new_password1">
+                                </div>
+                                <div class="row mt-2 w-75 ">
+                                    <label for="new_password2">Confirm new password</label>
+                                    <input class="w-100 form-control" type="text" name="new_password2" id="new_password2">
+                                </div>
+                                <button id="btn_change_password w-100" class="btn-apply rounded">Change Password</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-3 column-footer">
+                    <img style="width: 10.5rem; height: 10.5rem;" src="/Assets/Images/Footer/logo_transparent.png" alt="Logo">
+                    <p class="parent-menu">Follow us</p>
+                    <div class="row">
+                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Path 4.png" alt="fb"></div>
+                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Group 1.png" alt="instagram"></div>
+                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Layer 2.png" alt="twitter"></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <p class="parent-menu">Quick links</p>
+                    <a class="child-menu" href="#">Image License</a> <br>
+                    <a class="child-menu" href="#">Style Guide</a>
+                </div>
+                <div class="col-4">
+                    <p class="parent-menu">Information</p>
+                    <div class="row row-contain-icon-and-info">
+                        <img class="information-icon" src="/Assets/Images/Footer/Rectangle 24.png" alt="icon location">
+                        <p class="align-self-center">ĐH CNTT-ĐHQG TP.HCM, KP6, phường Linh Trung, quận Thủ Đức</p>
+                    </div>
+                    <div class="row row-contain-icon-and-info">
+                        <img class="information-icon" src="/Assets/Images/Footer/Rectangle 25.png" alt="icon location">
+                        <p class="align-self-center">0123456789</p>
+                    </div>
+                    <div class="row row-contain-icon-and-info">
+                        <img class="information-icon" src="/Assets/Images/Footer/Rectangle 26.png" alt="icon location">
+                        <!-- Margin email 1rem để bằng với margin tự động bootstrap đối với thẻ p ở trên. -->
+                        <a class="align-self-center" href="mailto:1752xxxx@gm.uit.edu.vn" style="margin-bottom: 1rem;">1752xxxx@gm.uit.edu.vn</a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p class="parent-menu">Policies</p>
+                    <a class="child-menu" href="#">Privacy Policies</a> <br>
+                    <a class="child-menu" href="#">Refund Policies</a> <br>
+                    <a class="child-menu" href="#">Term Of Services</a> <br>
+    
+                </div>
+            </div>
+            <div style="background-color: #F1CDCD; height: 0.1rem; margin: 2rem 6.2rem 2rem 6.2rem"></div>
+            <div style="display: inline;">
+                <p class="text-center" style="color: #0A0A0A; padding-bottom: 1.5rem; margin-bottom: 0px !important;"> © 2020 Copyright: TanThaiHuy</p>
+            </div>
+        </div>
+    </footer>
     <script src="Assets/js/jquery.js"></script>
     <script src="Assets/js/header.js"></script>
 </body>

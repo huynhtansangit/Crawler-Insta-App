@@ -1,27 +1,31 @@
 .logo-app{
-    position: absolute;
     background-image: url("../Images/Banner/logo_transparent@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 189px;
     height: 189px;
-    top: 0px;
+    top: 100px;
     left:0px;
     margin-left: 72px;
     z-index: 4 !important;
 }
-.behind-nav {
+
+#banner-section{
     position: relative;
-    right: 0px !important;
+    top: 0px;
+    right: 0px;
+    height: 110vh;
 }
-.banner {
+#banner-section .banner-container .banner {
     position: absolute;
     background-image: url("../Images/Banner/yellow-Brush.png");
+    background-position: centers;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1423.96px;
-    height: 896.88px;
-    right: -100px !important;
+    width: 1424px;
+    height: 900px;
+    top: 0px;
+    right: 0px;
     z-index: -1;
 }
 .img-decor-banner{
