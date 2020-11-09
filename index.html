@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- Css -->
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Style.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Header.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Banner.css" crossorigin="anonymous">
@@ -237,22 +238,44 @@
                         <p>Instag videos <br> of your own</p>
                     </div>
                 </div> <!-- end wrapper storage-->
-                <div class="col-11 storage-tab" id="picture-storage-container">
-                    <div class="row mt-2 mb-4 pb-5" style="border-bottom: #707070 solid 0.2rem;">
-                        <!-- Tận cùng bên trái thì margin left = 0, tương tự bên phải. -->
-                        <img class="downloaded-img " src="Assets/Images/Gallery/1.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/2.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/3.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/4.png">
-                        <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/5.png">
-    
+                <div class="col-11 swiper-container storage-tab" id="picture-storage-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mt-2 mb-5 pb-5" style="border-bottom: #707070 solid 0.2rem;">
+                                <!-- Tận cùng bên trái thì margin left = 0, tương tự bên phải. -->
+                                <img class="downloaded-img ml-0" src="Assets/Images/Gallery/1.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/2.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/3.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/4.png">
+                                <img class="downloaded-img mr-0" src="Assets/Images/Gallery/5.png">
+                            </div>
+                            <div>
+                                <img class="downloaded-img ml-0" src="Assets/Images/Gallery/6.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/7.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/8.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/9.png">
+                                <img class="downloaded-img mr-0" src="Assets/Images/Gallery/10.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mt-2 mb-5 pb-5" style="border-bottom: #707070 solid 0.2rem;">
+                                <img class="downloaded-img ml-0" src="Assets/Images/Gallery/6.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/7.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/8.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/9.png">
+                                <img class="downloaded-img mr-0" src="Assets/Images/Gallery/10.png">
+                            </div>
+                            <div>
+                                <img class="downloaded-img ml-0" src="Assets/Images/Gallery/1.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/2.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/3.png">
+                                <img class="downloaded-img" src="Assets/Images/Gallery/4.png">
+                                <img class="downloaded-img mr-0" src="Assets/Images/Gallery/5.png">
+                            </div>
+                        </div>
                     </div>
-                    <div class="row mt-4 mb-2">
-                        <img class="downloaded-img leftest-downloaded-img" src="Assets/Images/Gallery/6.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/7.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/8.png">
-                        <img class="downloaded-img" src="Assets/Images/Gallery/9.png">
-                        <img class="downloaded-img rightest-downloaded-img" src="Assets/Images/Gallery/10.png"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div> <!-- end picture storage container-->
                 <div class="col-11 storage-tab" id="profile-storage-container">
                     <div class="row">
@@ -359,6 +382,7 @@
     <script src="Assets/js/jquery.js"></script>
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/Storage.js"></script>
+    <script src="Assets/js/swiper-bundle.min.js"></script>
 </body>
 
 </html>

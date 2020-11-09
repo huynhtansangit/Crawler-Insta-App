@@ -13,6 +13,9 @@
 .wrapper-storage{
     margin-left: 4.2rem !important;
     margin-right: 4.2rem !important;
+
+    /* Bổ sung cái này cho nó phân biệt với phân footer */
+    padding-bottom: 1rem;
 }
 
 .downloaded-img{
@@ -21,14 +24,6 @@
     object-fit: cover;
     vertical-align: middle;
     margin: 0 1rem;
-}
-
-.rightest-downloaded-img{
-    margin-right: 0;
-}
-
-.leftest-downloaded-img{
-    margin-left: 0;
 }
 
 #profile-storage-container, #picture-storage-container, #video-storage-container{
@@ -43,7 +38,7 @@
 }   
 
 #picture-storage-container{
-    display: flex;
+    display: flex !important;
     flex-flow: column wrap !important;
     align-items: center !important;
 }
@@ -127,4 +122,10 @@ input{
 
 #left-side{
     border-right: solid 0.2rem #707070;
+}
+
+.swiper-slide{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
 }
