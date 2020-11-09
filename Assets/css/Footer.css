@@ -1,4 +1,9 @@
-
+.customized-row-footer{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 
 .footer-container{
     background-image: url("/Assets/images/Footer/background-footer.png");

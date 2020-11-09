@@ -10,7 +10,7 @@
     height: 15.8rem;
 }
 
-.wrapper-storage-profile{
+.wrapper-storage{
     margin-left: 4.2rem !important;
     margin-right: 4.2rem !important;
 }
@@ -31,7 +31,7 @@
     margin-left: 0;
 }
 
-#info-container, #storage-container{
+#profile-storage-container, #picture-storage-container, #video-storage-container{
     justify-content: center;
     background-color: white;
     height: 100%;
@@ -42,8 +42,8 @@
     height: 45rem;
 }   
 
-#storage-container{
-    display: flex !important;
+#picture-storage-container{
+    display: flex;
     flex-flow: column wrap !important;
     align-items: center !important;
 }
@@ -64,7 +64,7 @@ input{
     position:relative;
     z-index:1;
 }
-.customized-btn::after {
+.selected-customized-btn::after {
     content: '';
     background-image: url("../Images/Store/polygon.png");
     background-repeat: no-repeat;
@@ -86,6 +86,15 @@ input{
     padding-top: 1rem;
     width: 9.9rem;
     height: 8.4rem;
+}
+
+.customized-btn:hover{
+    background-color: rgb(245, 244, 244);
+}   
+
+/* Khi hover selected-customized-btn thi no khong doi mau. */
+.selected-customized-btn:hover {
+    background-color: white;
 }
 
 .icon-customized-btn{
