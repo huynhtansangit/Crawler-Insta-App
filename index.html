@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="Assets/css/Gallery.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Storage.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/Footer.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/EditPicture.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- JS -->
     <script src="Assets/js/jquery-3.5.1.js"></script>
@@ -154,7 +155,7 @@
             <div class="d-inline-block">
                 <div class="wonderful-gift-title text-left"
                     style="font-family: Pristina; font-size: 48px; letter-spacing: 4px;">Your Gallery</div>
-                <h2 class="text-left slogan-title text-uppercase" style="letter-spacing: 4px;">Let enjoy yourself</h2>
+                <h2 class="text-left slogan-title text-uppercase" style="letter-spacing: 4px;">Let's enjoy yourself</h2>
             </div>
             <div class="row">
                 <div class="photo-btn col-sm active-gallery-btn">
@@ -281,23 +282,23 @@
                     <div class="row">
                         <div id="left-side" class="col-6">
                             <form class="form-group">
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="first_name">First name</label>
                                     <input class="w-100 form-control" type="text" name="first_name" id="first_name">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="last_name">Last name</label>
                                     <input class="w-100 form-control" type="text" name="last_name" id="last_name">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="birthday">Birthday</label>
                                     <input class="w-100 form-control" type="date" name="birthday" id="birthday">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="phone">Phone</label>
                                     <input class="w-100 form-control" type="text" name="phone" id="phone">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="email">Email</label>
                                     <input class="w-100 form-control" type="text" name="email" id="email">
                                 </div>
@@ -306,16 +307,16 @@
                         </div>
                         <div id="right-side" class="col-6">
                             <form class="form-group">
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="current_password">Current password</label>
-                                    <input class="w-100 form-control border-right-danger" type="text"
+                                    <input class="w-100 form-control" type="text"
                                         name="current_password" id="current_password">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="new_password1">New password</label>
                                     <input class="w-100 form-control" type="text" name="new_password1" id="new_password1">
                                 </div>
-                                <div class="row mt-2 w-75 ">
+                                <div class="mt-2 w-75 ">
                                     <label for="new_password2">Confirm new password</label>
                                     <input class="w-100 form-control" type="text" name="new_password2" id="new_password2">
                                 </div>
@@ -337,19 +338,19 @@
                 <!-- Row của bootstrap gây dư độ rộng nên phải custom nó lại -->
                 <div class="col-3 column-footer">
                     <img style="width: 10.5rem; height: 10.5rem;" src="/Assets/Images/Footer/logo_transparent.png" alt="Logo">
-                    <p class="parent-menu">Follow us</p>
-                    <div class="row">
+                    <p class="parent-menu" style="margin-top: 0">Follow us</p>
+                    <div class="row" style="object-fit: cover;">
                         <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Path 4.png" alt="fb"></div>
                         <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Group 1.png" alt="instagram"></div>
                         <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Layer 2.png" alt="twitter"></div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <p class="parent-menu">Quick links</p>
                     <a class="child-menu" href="#">Image License</a> <br>
                     <a class="child-menu" href="#">Style Guide</a>
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <p class="parent-menu">Information</p>
                     <div class="row row-contain-icon-and-info">
                         <img class="information-icon" src="/Assets/Images/Footer/Rectangle 24.png" alt="icon location">
@@ -382,6 +383,7 @@
     <script src="Assets/js/jquery.js"></script>
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/Storage.js"></script>
+    <script src="Assets/js/EditPicture.js"></script>
     <script src="Assets/js/swiper-bundle.min.js"></script>
 </body>
 

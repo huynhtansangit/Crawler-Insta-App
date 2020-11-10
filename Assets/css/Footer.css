@@ -1,3 +1,13 @@
+@font-face {
+    font-family: poppinsBold;
+    src: url(/Assets/fonts/Poppins-Bold.otf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(/Assets/fonts/Roboto-Medium.ttf);
+}
+
 .customized-row-footer{
     display: -ms-flexbox;
     display: flex;
@@ -12,8 +22,15 @@
     background-position: right;
     position: relative;
 }
+
 .parent-menu{
-    font-family: semiBold;
+    margin-top: 2.2rem;
+    font-family: poppinsBold;
+    font-size: 1.25rem;
+}
+
+.contact-icon{
+    object-fit: cover;
 }
 
 .row-contain-icon-and-info{
@@ -32,13 +49,8 @@
     align-items: center !important;
 }
 
-
-
 .child-menu{
     margin: 5rem 0 !important;
-    font-family: regular;
-}
-
-a{
-    color: #0A0A0A;
+    font-family: roboto;
+    font-size: large;
 }

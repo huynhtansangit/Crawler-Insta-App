@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/EditPicture.css">
+    <link rel="stylesheet" href="Assets/css/Storage.css" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="Assets/js/EditPicture.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <section id="edit-picture-section">
+        <div class="edit-picture-container row">
+            <div id="navigator-edit-menu" class="col-1 p-0 m-0 test text-center">
+                <div class="navigator-edit-sub-menu selected-navigator-edit-sub-menu">
+                    <i class="fas fa-file-signature fa-light navigator-icon-menu"></i>
+                    <h5 class="navigator-edit-sub-menu-title">Text</h5>
+                </div>
+                <div class="navigator-edit-sub-menu">
+                    <i class="fas fa-palette fa-light navigator-icon-menu"></i>
+                <h5 class="navigator-edit-sub-menu-title">Color</h5>
+                </div>
+                <div class="navigator-edit-sub-menu">
+                    <i class="fas fa-file-image fa-light navigator-icon-menu"></i>
+                <h5 class="navigator-edit-sub-menu-title">Image</h5>
+                </div>
+                
+            </div>
+            <div id="detail-edit-option" class="col-3 test">
+                <div class="edit-option edit-text">
+                    <div class="mt-2">
+                        <label for="insert-text">Insert Text</label>
+                        <input class="w-100 form-control" type="text" name="insert-text" id="insert-text" placeholder="Create yourself">
+                    </div>
+                    <div class="mt-2">
+                        <label>Insert Text</label>
+                        <input class="form-control adjust-bar p-0" type="range" min="1" max="100" value="50">
+                        <div class="row">
+                            <p class="col-4 text-left">-360</p>
+                            <p class="col-4 text-center">0</p>
+                            <p class="col-4 text-right">360</p>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <label>Insert Text</label>
+                        <input class="form-control adjust-bar p-0" type="range" min="1" max="100" value="50">
+                        <div class="row">
+                            <p class="col-6 text-left">0</p>
+                            <p class="col-6 text-right">100</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="preview-editing-image" class="col-8 test">
+                <i class="fas fa-palette fa-light navigator-icon-menu"></i>
+                fas
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+</body>
+
+</html>

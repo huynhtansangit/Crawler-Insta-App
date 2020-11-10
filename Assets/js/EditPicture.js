@@ -1,0 +1,12 @@
+$(document).ready(function () {
+    // DECLARE INITIAL ACTION (LIKE HIDING SOME TABS, LOADING SOMETHING)
+
+
+
+    // DECLARE HELPER FUNCTION
+
+
+
+    // DECLARE EVENT HANDLER
+
+})

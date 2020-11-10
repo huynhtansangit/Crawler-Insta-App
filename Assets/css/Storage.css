@@ -45,6 +45,8 @@
 
 input{
     border-bottom: solid 0.2rem rgb(204, 1, 1) !important;
+
+    height: 4.5rem !important;
 }
 .btn-apply{
     background-color: #212B36 !important;
@@ -52,6 +54,8 @@ input{
     box-shadow: 0.3rem 0.3rem 0.5rem grey;
     width: 10rem;
     margin-top: 1rem;
+
+    height: 3.2rem;
 }
 
 .selected-customized-btn{
@@ -128,4 +132,11 @@ input{
     display: flex !important;
     flex-flow: column wrap !important;
     align-items: center !important;
+}
+
+/* footer, label, p in all files will be changed like below which making uniform */
+p, label, a {
+    color: #0A0A0A;
+    font-size: large;
+    font-family: Roboto;
 }

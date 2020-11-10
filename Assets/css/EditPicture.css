@@ -1,0 +1,104 @@
+@font-face {
+    font-family: MuseoSlab500;
+    src: url(/Assets/fonts/Museo_Slab_500.otf);
+}
+
+.edit-picture-container{
+    margin: 0 5.875rem;
+    height: 100%;
+    border: black solid 1px;
+}
+
+.test{
+    height: 100%;
+    border: black solid 1px;
+}
+
+#navigator-edit-menu{
+    background-color: #212B36;
+}
+
+.selected-navigator-edit-sub-menu{
+    background-color: #ffffff;
+    opacity: 20%;
+}
+
+.navigator-edit-sub-menu-title{
+    color: white;
+    font-family: MuseoSlab500;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.edit-picture-container input{
+    border-bottom: solid 0.2rem rgb(204, 1, 1) !important;
+
+    height: 4.5rem !important;
+}
+
+.navigator-icon-menu{
+    font-size: xxx-large;
+}
+
+.fa-light{
+    color: white;
+}
+
+/* .adjust-bar {
+    overflow: hidden;
+    -webkit-appearance: button;
+    background-color: #9a905d;
+  }
+  
+  .adjust-bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+}
+  
+  .adjust-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1px !important;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #43e5f7;
+  } */
+
+
+/* input[type="range"]{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 0.2rem !important;
+    background: #434343;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border: 1px solid #CECECE;
+    height: 15px;
+    width: 15px;
+    background: #434343;
+} */
+
+/* input[type=range] {
+    -webkit-appearance: none; 
+    height:0.1rem !important;
+    width:100%;
+    cursor: pointer;
+    border-bottom: solid 0.2rem rgb(255, 255, 255) !important;
+    margin-bottom: 10px;
+    background-color: blue;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  } */
