@@ -40,15 +40,24 @@ $(document).ready(function () {
         // Ẩn tất cả các tab, không thể dùng .hide() vì bị swiper không cho => phải dùng important
         $(".storage-tab").attr( "style", "display: none !important;" )
 
+        // Ẩn các arrow cũ đi
+        $(".customized-btn-arrow-place-holder ").removeClass("selected-customized-btn-arrow");
+
         // Hiện mỗi tab click
         if(idClickedBtn === 'profile-customized-btn'){
             $("#profile-storage-container").show();
+            // Và show arrow mới.
+            $("#profile-arrow-place-holder").addClass("selected-customized-btn-arrow"); //select nút mới.
         }
         else if(idClickedBtn === 'picture-customized-btn'){
             $("#picture-storage-container").show();
+
+            $("#picture-arrow-place-holder").addClass("selected-customized-btn-arrow"); //select nút mới.
         }
         else{
             $("#video-storage-container").show();
+
+            $("#video-arrow-place-holder").addClass("selected-customized-btn-arrow"); //select nút mới.
         }
     }
 

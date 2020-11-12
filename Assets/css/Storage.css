@@ -63,17 +63,6 @@ input{
     position:relative;
     z-index:1;
 }
-.selected-customized-btn::after {
-    content: '';
-    background-image: url("../Images/Store/polygon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 40px;
-    height: 65px;
-    left: 33px;
-    top: 23px;
-}
 
 .customized-btn{
     display: flex !important;
@@ -96,6 +85,29 @@ input{
     background-color: white;
 }
 
+.column-place-holder-arrow{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.customized-btn-arrow-place-holder{
+    height: 8.4rem;
+    align-items: center !important;
+}
+
+.selected-customized-btn-arrow {
+    /* content: ''; */
+    background-image: url("../Images/Store/polygon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 40px;
+    height: 65px;
+    z-index:1;
+}
+
 .icon-customized-btn{
     width: 2.1rem;
     height: 2.1rem;
@@ -103,7 +115,10 @@ input{
 
 .wrapper-customized-btn{
     position: relative;
-    left: -30px;
+    
+    /* Edit cái này để cho nó lùi qua trái như ban đầu. */
+    /* left: -30px; */
+    
     display: flex !important;
     flex-flow: column wrap !important;
     align-items: center !important;
@@ -139,4 +154,9 @@ p, label, a {
     color: #0A0A0A;
     font-size: large;
     font-family: Roboto;
+}
+
+/* IMPORTANT: Ghi đè lại thư viện Swiper để hiển thị nút chọn bị lỗi */
+.swiper-container{
+    z-index: auto;
 }
