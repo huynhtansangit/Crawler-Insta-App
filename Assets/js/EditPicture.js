@@ -7,7 +7,20 @@ $(document).ready(function () {
 
 
     // DECLARE HELPER FUNCTION
+    function showEditPicOption(selectedOption){
+        let idSelectedOption = selectedOption.attr('id');
 
+        // Hiện mỗi tab click
+        if(idSelectedOption === 'edit-pic-text-main-option'){
+            $("#edit-pic-text-option").show();
+        }
+        else if(idSelectedOption === 'edit-pic-color-main-option'){
+            $("#edit-pic-color-option").show();
+        }
+        else{
+            $("#edit-pic-image-option").show();
+        }
+    }
 
 
     // DECLARE EVENT HANDLER
@@ -16,8 +29,8 @@ $(document).ready(function () {
         $(this).addClass("selected-edit-pic-main-option"); //select nút mới.
 
         // Ẩn các cái menu còn lại.
-        // $("").hide();
+        $(".edit-pic-option").hide();
         // show cái mới được chọn.
-        
+        showEditPicOption($(this));
     });
 })
