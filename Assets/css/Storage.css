@@ -1,6 +1,6 @@
 .storage-container,.profile-container {
     position: relative;
-    background-image: url("../Images/Store/colorGradient@2x.png");
+    background-image: url("../Images/Store/colorGradient\ \(2\).png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,10 +30,8 @@
     justify-content: center;
     background-color: white;
     height: 100%;
-
     padding: 1.5rem 0;
-
-    width: 101.1rem;
+    width: 101.1rem !important;
     height: 45rem;
 }   
 
@@ -72,10 +70,23 @@ input{
     background-color: white;
     color: #0A0A0A;
     padding-top: 1rem;
-    width: 9.9rem;
+    width: 100%;
     height: 8.4rem;
 }
-
+.customized-btn::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;   
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 1em solid;
+  right: -1em;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
+  filter: drop-shadow(6px 3px 6px rgba(133, 125, 125, 0.692));
+  overflow: hidden;
+  color: white;
+}
 .customized-btn:hover{
     background-color: rgb(245, 244, 244);
 }   
@@ -84,30 +95,6 @@ input{
 .selected-customized-btn:hover {
     background-color: white;
 }
-
-.column-place-holder-arrow{
-    display: flex !important;
-    flex-flow: column wrap !important;
-    align-items: center !important;
-    justify-content: center;
-}
-
-.customized-btn-arrow-place-holder{
-    height: 8.4rem;
-    align-items: center !important;
-}
-
-.selected-customized-btn-arrow {
-    /* content: ''; */
-    background-image: url("../Images/Store/polygon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 40px;
-    height: 65px;
-    z-index:1;
-}
-
 .icon-customized-btn{
     width: 2.1rem;
     height: 2.1rem;

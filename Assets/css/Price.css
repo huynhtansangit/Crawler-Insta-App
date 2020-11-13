@@ -1,0 +1,66 @@
+.price-container{
+    margin: 0px 94px 0px 94px;
+    padding: 100px 0px 100px 0px;
+}
+.pricing-item{
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #FC84B6;
+    font-family: RobotoBlack;
+    margin: auto;
+    width: 400px;
+    height: 302px;
+    padding: 10px;
+    text-align: center;
+    cursor: default;
+}
+.pricing-item h3{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.pricing-content{
+    position: relative;
+    width: 370px;
+    border-bottom: 1px solid #70707036;
+    border-top: 1px solid #70707036;
+    padding: 10px;
+    margin:50px auto 0px auto;
+}
+.pricing-content .price-number{
+    position: relative;
+    display: block;
+    font-size: 44px;
+}
+.pricing-content .price-number::before{
+    content: url("../Images/Pricing/vndIcon.png");
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+.pricing-content .price-number::after{
+    content: ' / ACCOUNT';
+    display: inline;
+    width: 120px;
+    height: 50px;
+    font-family: regular;
+    font-size: 20px;
+    color: #0303037c;
+}
+.button-request {
+    position: relative;
+    border: 1px solid #CD3D76;
+    border-radius: 6px;
+    padding: 4px 10px 4px 10px;
+    bottom: 30px;
+    left: 30%;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 200px;
+}
+.button-request:hover {
+    border: 2px solid #db5e90;
+    box-shadow: 0px 3px 6px rgba(128, 128, 128, 0.24);
+}

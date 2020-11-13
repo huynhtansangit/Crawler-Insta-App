@@ -1,0 +1,63 @@
+.about-us-container{
+    margin: 100px 0px 0px 0px;
+    background-image: url("../Images/Aboutus/aboutus-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-us-container .row div {
+    text-align: center;
+    position: relative;
+}
+#instagram-banner-img{
+    opacity: 0.8;
+    position: relative;
+    top: 0px;
+}
+.about-us-text{
+    font-family: Pristina;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 55px;
+    margin: 10px 0 10px 0;
+}
+.info-member-item{
+    font-family: regular;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.info-member-item p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.avt-member{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover !important;
+}
+.intro-app-rectangle{
+    position: absolute;
+    width: 630px;
+    height: 275px;
+    border-radius: 41px;
+    background-color: #f9f584cc;
+    top: 310px;
+    left: 690px;
+}
+.intro-app-rectangle .row{
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.text-content .number {
+    font-family: RobotoBlack;
+    color: #154B61;
+    font-size: 55px;
+}
+.text-content .text {
+    font-family: RobotoMedium;
+    color: #154B61;
+    font-size: 26px;
+}

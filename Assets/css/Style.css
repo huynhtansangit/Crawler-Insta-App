@@ -26,12 +26,36 @@ section{
 }
 @font-face {
     font-family: semiBold;
-    src: url(/Assets/Font/Montserrat-SemiBold.otf);
+    src: url("../fonts/Montserrat-SemiBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: regular;
-    src: url(/Assets/Font/Roboto-Regular.ttf);
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: RobotoBlack;
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+.Poppins {
+    font-family: Poppins !important;
+}
+.RobotoMedium {
+    font-family: RobotoMedium !important;
+}
+.RobotoBlack {
+    font-family: RobotoBlack !important;
+}
+.RobotoRegular {
+    font-family: regular !important;
+}
+.Montserrat-SemiBold {
+    font-family: semiBold !important;
+}
+
 /* End  font  setting*/
 
