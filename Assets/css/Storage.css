@@ -95,6 +95,33 @@ input{
 .selected-customized-btn:hover {
     background-color: white;
 }
+<<<<<<< HEAD
+=======
+
+.column-place-holder-arrow{
+    display: flex !important;
+    flex-flow: column wrap !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.customized-btn-arrow-place-holder{
+    height: 8.4rem;
+    align-items: center !important;
+}
+
+.selected-customized-btn-arrow {
+    /* content: ''; */
+    background-image: url("../Images/Store/polygon-transparent-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 40px;
+    height: 65px;
+    z-index:1;
+}
+
+>>>>>>> 69896537d32555555c6b30b8f8116a02eab6cb97
 .icon-customized-btn{
     width: 2.1rem;
     height: 2.1rem;
