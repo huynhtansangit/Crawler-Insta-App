@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
-    height: 84px !important;
+    height: 64px !important;
     line-height: 84px !important;
 
 }
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
-    height: 84px !important;
+    height: 64px !important;
     line-height: 84px !important;
 }
 .video-btn:hover.active-gallery-btn,.photo-btn:hover.active-gallery-btn {
