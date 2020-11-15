@@ -6,8 +6,8 @@
     font-size: 20px;
     font-family: MuseoSlab700, Arial, Helvetica, sans-serif;
     height: 100%;
-    padding: 0px;
-    margin: 20px 94px 20px 94px;
+    padding: 0;
+    margin: 20px 94px 100px 94px;
 }
 .gallery-container{
     padding: 0px;
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
-    height: 84px !important;
+    height: 64px !important;
     line-height: 84px !important;
 
 }
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
-    height: 84px !important;
+    height: 64px !important;
     line-height: 84px !important;
 }
 .video-btn:hover.active-gallery-btn,.photo-btn:hover.active-gallery-btn {

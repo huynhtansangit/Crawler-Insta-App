@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Css -->
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Style.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Header.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Banner.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Gallery.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Storage.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/Footer.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/EditPicture.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="Assets/css/Style.css" >
+    <link rel="stylesheet" href="Assets/css/Header.css" >
+    <link rel="stylesheet" href="Assets/css/Banner.css" >
+    <link rel="stylesheet" href="Assets/css/Gallery.css" >
+    <link rel="stylesheet" href="Assets/css/Price.css" >
+    <link rel="stylesheet" href="Assets/css/Storage.css" >
+    <link rel="stylesheet" href="Assets/css/Aboutus.css" >
+    <link rel="stylesheet" href="Assets/css/Footer.css" >
+    <link rel="stylesheet" href="Assets/css/EditPicture.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- JS -->
     <script src="Assets/js/jquery-3.5.1.js"></script>
@@ -76,79 +78,73 @@
         <!-- Navigation bar -->
     </header>
     <section id="banner-section">
-        <div class="banner-container">
-            <div class="logo-app">
-            </div>
-            <div class=" banner">
-                <img class="img-decor-banner" src="/Assets/Images/Banner/girl-cover-img.png" alt="">
-                <div class="pink-circle-decor" id="circle-2">
-                </div>
-                <div class="pink-circle-decor" id="circle-3">
-                </div>
-                <div class="pink-circle-decor" id="circle-4">
-                </div>
-                <div class="pink-circle-decor" id="circle-5">
-                </div>
-                <div class="pink-circle-decor" id="circle-6">
-                </div>
-                <div class="pink-circle-decor" id="circle-7">
-                </div>
-                <div class="girl-circle-decor" id="girl-1">
-                </div>
-                <div class="girl-circle-decor" id="girl-2">
-                </div>
-                <div class="girl-circle-decor" id="girl-3">
-                </div>
-                <div class="girl-circle-decor" id="girl-4">
-                </div>
-                <div class="girl-circle-decor" id="girl-5">
-                </div>
-                <div class="girl-circle-decor" id="girl-6">
-                </div>
-                <div class="btn-group">
-                    <button type="submit" class="sign-in-btn btn">Sign in <img class="icon-search"
-                            src="/Assets/Images/Banner/keyIcon2x.png" alt="icon-search"></button>
-                    <button type="submit" class="sign-up-btn btn btn-danger">Sign up <img class="icon-search"
-                            src="/Assets/Images/Banner/rightArrow.png"
-                            style=" position: relative; width:10px; height: 17px; right: -8px; top: 7px;"
-                            alt="icon-search"></button>
-                </div>
-            </div>
-            <div class="pink-circle-decor" id="circle-1">
-
-            </div>
-            <div class="big-slogan">
-                A place to save <br>
-                pictures, videos <br>
-                and moments.
-            </div>
-            <div class="small-slogan">
-                The social media era is well and truly underway <br>
-                Photo & Video sharing app Instagram, Facebook, Tiktok <br>
-                have become a huge hit with younger audiences. <br>
-                But if you find it hart to save them let's get started with us!
-            </div>
-            <div class="dropdown dropdown-banner">
-                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Choose...
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Instagram tool</a>
-                    <a class="dropdown-item" href="#">Tiktok tool</a>
-                    <a class="dropdown-item" href="#">Facebook tool</a>
-                </div>
-            </div>
-            <form id="form-banner">
-                <div class="form-group input-url-container">
-                    <img class="icon-input-url" src="Assets/Images/Banner/urlIcon1x.png" alt="">
-                    <input style="padding-left: 55px !important;" type="text" class="form-control input-url-element"
-                        id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Url">
-                </div>
-                <button type="submit" class="submit-btn btn btn-danger">Submit <img class="icon-search"
-                        src="/Assets/Images/Banner/btnIconSearch.png" alt="icon-search"></button>
-            </form>
+        <div class="logo-app">
         </div>
+        <div class=" banner">
+            <img class="img-decor-banner" src="/Assets/Images/Banner/girl-cover-img.png" alt="">
+            <div class="pink-circle-decor" id="circle-2">
+            </div>
+            <div class="pink-circle-decor" id="circle-3">
+            </div>
+            <div class="pink-circle-decor" id="circle-4">
+            </div>
+            <div class="pink-circle-decor" id="circle-5">
+            </div>
+            <div class="pink-circle-decor" id="circle-6">
+            </div>
+            <div class="pink-circle-decor" id="circle-7">
+            </div>
+            <div class="girl-circle-decor" id="girl-1">
+            </div>
+            <div class="girl-circle-decor" id="girl-2">
+            </div>
+            <div class="girl-circle-decor" id="girl-3">
+            </div>
+            <div class="girl-circle-decor" id="girl-4">
+            </div>
+            <div class="girl-circle-decor" id="girl-5">
+            </div>
+            <div class="girl-circle-decor" id="girl-6">
+            </div>
+
+        </div>
+        <button type="button" class="btn btn-outline-dark">Sign-in <i class="fas fa-key"></i></button>
+        <button type="button" class="btn btn-outline-danger">Sign-up<i style="margin-left:10px;" class="fas fa-chevron-right"></i></button>
+
+        <div class="pink-circle-decor" id="circle-1">
+
+        </div>
+        <div class="big-slogan">
+            A place to save <br>
+            pictures, videos <br>
+            and moments.
+        </div>
+        <div class="small-slogan">
+            The social media era is well and truly underway <br>
+            Photo & Video sharing app Instagram, Facebook, Tiktok <br>
+            have become a huge hit with younger audiences. <br>
+            But if you find it hart to save them let's get started with us!
+        </div>
+        <div class="dropdown dropdown-banner">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Choose...
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Instagram tool</a>
+                <a class="dropdown-item" href="#">Tiktok tool</a>
+                <a class="dropdown-item" href="#">Facebook tool</a>
+            </div>
+        </div>
+        <form id="form-banner">
+            <div class="form-group input-url-container">
+                <img class="icon-input-url" src="Assets/Images/Banner/urlIcon1x.png" alt="">
+                <input style="padding-left: 55px !important;" type="text" class="form-control input-url-element"
+                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Url">
+            </div>
+            <button type="submit" class="submit-btn btn btn-danger">Submit <img class="icon-search"
+                    src="/Assets/Images/Banner/btnIconSearch.png" alt="icon-search"></button>
+        </form>
     </section>
     <section id="gallery-section">
         <div class="gallery-container text-center">
@@ -200,19 +196,22 @@
                         <img src="Assets/Images/Gallery/10.png" alt="">
                     </div>
                 </div>
-                <div class="col-4 info-container offset-1" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <div class="col-4 info-container offset-1"
+                    style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                     <div class="avt-container">
                         <img width="160" height="160" src="Assets/Images/Gallery/avtImg.png" alt="avatar-image">
                     </div>
-                    <div
-                        style=" display: flex;justify-content: center; align-items: center; margin-top:30px;">
+                    <div style=" display: flex;justify-content: center; align-items: center; margin-top:30px;">
                         <i style="padding-right: 15px;" class="fab fa-instagram"></i>hunghung.cule.567</div>
                     <p style="font-size: 26px; padding-top: 49px; font-weight: bold;">Available items</p>
-                    <div class="number-of-images-available" style="font-weight: bold; padding-top:43px; color: #154B61; font-size: 35px;">
+                    <div class="number-of-images-available"
+                        style="font-weight: bold; padding-top:43px; color: #154B61; font-size: 35px;">
                         432
                     </div>
-                    <button style="margin-top: 50px; text-transform: uppercase; font-family: Poppins; padding:10px; background-color: #CD3D76;" type="button" class="btn btn-danger">sign in to download</button>
-                    </div>
+                    <button
+                        style="margin-top: 50px; text-transform: uppercase; font-family: Poppins; padding:10px; background-color: #CD3D76;"
+                        type="button" class="btn btn-danger">sign in to download</button>
+                </div>
             </div>
         </div>
     </section>
@@ -226,25 +225,18 @@
                     <img class="avatar-img mb-3" src="Assets/Images/Store/anna-kendrick.jpg" alt="avatar">
                     <p style="border-top: #154B61 0.2rem solid; padding-top: 0.5rem ;">Hi, I am AI</p>
                     <div class="row">
-                        <div class="col-10">
-                            <div id="profile-customized-btn" class="customized-btn">
-                                <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle -2.png" alt="profile">
-                                <p>Your profile</p>
-                            </div>
-                            <!-- selected-customized-btn để thể hiện nút được chọn -->
-                            <div id="picture-customized-btn" class="customized-btn selected-customized-btn">
-                                <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle 34.png" alt="Images">
-                                <p>Instag of <br> your own</p>
-                            </div>
-                            <div id="video-customized-btn" class="customized-btn">
-                                <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
-                                <p>Instag videos <br> of your own</p>
-                            </div>
+                        <div id="profile-customized-btn" class="customized-btn">
+                            <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle -2.png" alt="profile">
+                            <p>Your profile</p>
                         </div>
-                        <div class="col-2 column-place-holder-arrow">
-                            <div id="profile-arrow-place-holder" class="customized-btn-arrow-place-holder"></div>
-                            <div id="picture-arrow-place-holder" class="selected-customized-btn-arrow customized-btn-arrow-place-holder"></div>
-                            <div id="video-arrow-place-holder" class="customized-btn-arrow-place-holder"></div>
+                        <!-- selected-customized-btn để thể hiện nút được chọn -->
+                        <div id="picture-customized-btn" class="customized-btn selected-customized-btn">
+                            <img class="icon-customized-btn" src="Assets/Images/Store/Rectangle 34.png" alt="Images">
+                            <p>Instag of <br> your own</p>
+                        </div>
+                        <div id="video-customized-btn" class="customized-btn">
+                            <img class="icon-customized-btn" src="/Assets/Images/Store/Rectangle 33.png" alt="videos">
+                            <p>Instag videos <br> of your own</p>
                         </div>
                     </div>
                 </div> <!-- end wrapper storage-->
@@ -318,18 +310,21 @@
                             <form class="form-group">
                                 <div class="mt-2 w-75 ">
                                     <label for="current_password">Current password</label>
-                                    <input class="w-100 form-control" type="text"
-                                        name="current_password" id="current_password">
+                                    <input class="w-100 form-control" type="text" name="current_password"
+                                        id="current_password">
                                 </div>
                                 <div class="mt-2 w-75 ">
                                     <label for="new_password1">New password</label>
-                                    <input class="w-100 form-control" type="text" name="new_password1" id="new_password1">
+                                    <input class="w-100 form-control" type="text" name="new_password1"
+                                        id="new_password1">
                                 </div>
                                 <div class="mt-2 w-75 ">
                                     <label for="new_password2">Confirm new password</label>
-                                    <input class="w-100 form-control" type="text" name="new_password2" id="new_password2">
+                                    <input class="w-100 form-control" type="text" name="new_password2"
+                                        id="new_password2">
                                 </div>
-                                <button id="btn_change_password w-100" class="btn-apply rounded">Change Password</button>
+                                <button id="btn_change_password w-100" class="btn-apply rounded">Change
+                                    Password</button>
                             </form>
                         </div>
                     </div>
@@ -337,7 +332,136 @@
                 <div class="col-11 storage-tab" id="video-storage-container">
                     Loading...
                 </div>
-                
+
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ffffff;" class="price-section">
+        <div style="text-align:center; " class="price-container">
+            <h4 style="text-transform:capitalize; font-family: semiBold; font-weight: 800;font-size: 56px; ">multiple
+                pricing options</h4>
+            <p style="font-family: regular; font-size: 26px;">
+                We've prepared pricing plans for all budgets so you can get started right away.
+            </p>
+            <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.15);" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 DAY</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">5000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 DAY</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">30.000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 DAY</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">120.000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 DAY</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">1tr247</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us-section">
+        <div class="about-us-container">
+            <div class="row">
+                <div class="col-ml-12 col-lg-6 col-sm-12">
+                    <div class="float-left">
+                        <img id="instagram-banner-img" src="Assets/Images/Aboutus/about-us-decor-img.png"
+                            alt="about-us-decor-img">
+                    </div>
+                </div>
+                <div class="col-ml-12 col-lg-6 col-sm-12">
+                    <div class="float-right">
+                        <div class="about-us-text">
+                            About our team
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="info-member-item">
+                                    <img src="Assets/Images/Aboutus/avt-1.jpg" alt="avt-1" class="avt-member">
+                                    <p>nguyễn thanh sơn</p>
+                                    <p>founder</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="info-member-item">
+                                    <img src="Assets/Images/Aboutus/avt-2.jpg" alt="avt-1" class="avt-member">
+                                    <p>mai hùng</p>
+                                    <p>co-founder</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="info-member-item">
+                                    <img src="Assets/Images/Aboutus/avt-3.jpg" alt="avt-1" class="avt-member">
+                                    <p>hoàng ngọc hùng</p>
+                                    <p>manager</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="info-member-item">
+                                    <img src="Assets/Images/Aboutus/avt-4.jpg" alt="avt-1" class="avt-member">
+                                    <p>huỳnh tấn sang</p>
+                                    <p>designer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-app-rectangle">
+                <div class="row">
+                    <div class="col-6 text-content align-items-center flex-wrap">
+                        <p class="number">600+</p>
+                        <p class="text">List of all user <br> accounts on my website</p>
+                    </div>
+                    <div class="col-6 text-content align-items-center flex-wrap">
+                        <p class="number">6000+</p>
+                        <p class="text">List of all items <br> have been downloaded</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -346,12 +470,15 @@
             <div class="customized-row-footer">
                 <!-- Row của bootstrap gây dư độ rộng nên phải custom nó lại -->
                 <div class="col-3 column-footer">
-                    <img style="width: 10.5rem; height: 10.5rem;" src="/Assets/Images/Footer/logo_transparent.png" alt="Logo">
+                    <img style="width: 10.5rem; height: 10.5rem;" src="/Assets/Images/Footer/logo_transparent.png"
+                        alt="Logo">
                     <p class="parent-menu" style="margin-top: 0">Follow us</p>
                     <div class="row" style="object-fit: cover;">
                         <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Path 4.png" alt="fb"></div>
-                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Group 1.png" alt="instagram"></div>
-                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Layer 2.png" alt="twitter"></div>
+                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Group 1.png" alt="instagram">
+                        </div>
+                        <div class="col-4 contact-icon"><img src="/Assets/Images/Footer/Layer 2.png" alt="twitter">
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
@@ -372,7 +499,8 @@
                     <div class="row row-contain-icon-and-info">
                         <img class="information-icon" src="/Assets/Images/Footer/Rectangle 26.png" alt="icon location">
                         <!-- Margin email 1rem để bằng với margin tự động bootstrap đối với thẻ p ở trên. -->
-                        <a class="align-self-center" href="mailto:1752xxxx@gm.uit.edu.vn" style="margin-bottom: 1rem;">1752xxxx@gm.uit.edu.vn</a>
+                        <a class="align-self-center" href="mailto:1752xxxx@gm.uit.edu.vn"
+                            style="margin-bottom: 1rem;">1752xxxx@gm.uit.edu.vn</a>
                     </div>
                 </div>
                 <div class="col-2">
@@ -380,12 +508,13 @@
                     <a class="child-menu" href="#">Privacy Policies</a> <br>
                     <a class="child-menu" href="#">Refund Policies</a> <br>
                     <a class="child-menu" href="#">Term Of Services</a> <br>
-    
+
                 </div>
             </div>
             <div style="background-color: #F1CDCD; height: 0.1rem; margin: 2rem 6.2rem 2rem 6.2rem"></div>
             <div style="display: inline;">
-                <p class="text-center" style="color: #0A0A0A; padding-bottom: 1.5rem; margin-bottom: 0px !important;"> © 2020 Copyright: TanThaiHuy</p>
+                <p class="text-center" style="color: #0A0A0A; padding-bottom: 1.5rem; margin-bottom: 0px !important;"> ©
+                    2020 Copyright: TanThaiHuy</p>
             </div>
         </div>
     </footer>
