@@ -46,6 +46,21 @@
 }
 
 #pic-preview{
-    width: 72.9rem;
-    height: 48rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+}
+
+#btn-export-container{
+    background-color: #C9BCBC;
+}
+
+.btn-export{
+    background-color: #212B36 !important;
+    color: white !important;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+    width: 10rem;
+    /* margin-top: 1rem; */
+    margin: 1rem 0;
+
+    height: 3.2rem;
+    font-family: MuseoSlab500;
 }
