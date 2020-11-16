@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Css -->
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css" >
-    <link rel="stylesheet" href="Assets/css/Style.css" >
-    <link rel="stylesheet" href="Assets/css/Header.css" >
-    <link rel="stylesheet" href="Assets/css/Banner.css" >
-    <link rel="stylesheet" href="Assets/css/Gallery.css" >
-    <link rel="stylesheet" href="Assets/css/Price.css" >
-    <link rel="stylesheet" href="Assets/css/Storage.css" >
-    <link rel="stylesheet" href="Assets/css/Aboutus.css" >
-    <link rel="stylesheet" href="Assets/css/Footer.css" >
-    <link rel="stylesheet" href="Assets/css/EditPicture.css" >
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Assets/css/Style.css">
+    <link rel="stylesheet" href="Assets/css/Header.css">
+    <link rel="stylesheet" href="Assets/css/Banner.css">
+    <link rel="stylesheet" href="Assets/css/Gallery.css">
+    <link rel="stylesheet" href="Assets/css/Price.css">
+    <link rel="stylesheet" href="Assets/css/Storage.css">
+    <link rel="stylesheet" href="Assets/css/Aboutus.css">
+    <link rel="stylesheet" href="Assets/css/Footer.css">
+    <link rel="stylesheet" href="Assets/css/EditPicture.css">
+    <link rel="stylesheet" href="Assets/css/ButtonEffect.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- JS -->
     <script src="Assets/js/jquery-3.5.1.js"></script>
@@ -27,52 +28,104 @@
 <body>
     <header>
         <!-- Start navigation bar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="Assets/Images/Banner/logo_transparent@2x.png" width="189"
-                    height="189" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div style="position: relative;" class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul style="position: relative; left: 10px;" class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Service
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <form style="position: relative;" class="form-inline my-2 my-lg-0" id="form-header">
-                    <div class="dropdown dropdown-header">
-                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose...
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Instagram tool</a>
-                            <a class="dropdown-item" href="#">Tiktok tool</a>
-                            <a class="dropdown-item" href="#">Facebook tool</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target"
+                    aria-expanded="false" aria-controls="collapse-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="Assets/Images/Banner/logo_transparent.png" alt="logo"
+                        width="120px" height="120px"></a>
+                <div class="display-block w-100 align-self-center">
+                    <div class="collapse navbar-collapse border-bottom border-dark w-100 box-shadow "
+                        id="collapse_target">
+                        <div class="clearfix w-100">
+                            <div class="float-left">
+                                <ul class="navbar-nav">
+                                    <li class="parent-home nav-item dropdown">
+                                        <a href="#" role="button" class="nav-link dropdown-toggle"
+                                            data-toggle="dropdown" data-target="#home_dropdown">Home
+                                            <span class="caret"></span>
+                                        </a>
+                                        <div class="neumorphism dropdown-menu home" aria-labelledby="home_dropdown">
+                                            <a class="dropdown-item" href="index.html#blog-section">Blog</a>
+                                            <a class="dropdown-item" href="#home-product-section">Best sellers</a>
+                                            <a class="dropdown-item" href="#team-section">Flower experts</a>
+                                        </div>
+                                    </li>
+                                    <li class="parent-page nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                            data-target="page-dropdown" href="#">Page<span class="caret"></span></a>
+                                        <div class="neumorphism dropdown-menu page" aria-labelledby="page-dropdown">
+                                            <a class="dropdown-item" href="user-page.html">My account</a>
+                                            <a class="dropdown-item" href="notfound-404.html">Policy</a>
+                                            <a class="dropdown-item" href="notfound-404.html">FAQs</a>
+                                        </div>
+                                    </li>
+                                    <li class="parent-shop nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                            data-target="shop-dropdown" href="#">Shop<span class="caret"></span></a>
+                                        <div class="neumorphism dropdown-menu shop" aria-labelledby="shop-dropdown">
+                                            <a class="dropdown-item" href="product-list.html">Product list</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="notfound-404.html">Wedding</a>
+                                            <a class="dropdown-item" href="notfound-404.html">Birthday</a>
+                                            <a class="dropdown-item" href="notfound-404.html">Party</a>
+                                            <a class="dropdown-item" href="notfound-404.html">Valentine</a>
+                                            <a class="dropdown-item" href="notfound-404.html">Tet</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div title="Today is open" class="float-right" style="margin-top: 8px;">
+                                <i class="fa fa-clock-o"></i>
+                                <span>Open every days 800 - 18:00</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="input-header-container">
-                        <img class="icon-input-header" src="Assets/Images/Banner/urlIcon1x.png" alt="">
-                        <input id="input-header" class="form-control mr-sm-2" type="search" placeholder="Url"
-                            aria-label="Search">
-                        <button class="btn my-2 my-sm-0 btn-search-header" type="submit"></button>
+                    <div class="float-right ">
+                        <div class="icon-bar">
+                            <ul class="navbar-nav">
+                                <li class="icon-bar-hover">
+                                    <a class="btn" href="#" data-toggle="modal" data-target="#modal-search-box"><i
+                                            class="fa fa-search"></i></a>
+                                </li>
+                                <li class="icon-bar-hover">
+                                    <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>
+                                        <span class="cart-number">0</span>
+                                    </a>
+                                </li>
+                                <li class="parent-user dropdown icon-bar-hover">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" data-target="user" href="#"><i
+                                            class="fa fa-user"></i></a>
+                                    <div id="visitor"
+                                        class="neumorphism toggler dropdown-menu visitor-user dropdown-menu-right"
+                                        aria-labelledby="visitor">
+                                        <a href="user-page.html" class="nav-link dropdown-item-custom"
+                                            title="Go to login page">
+                                            <img class="text-center col-12 my-auto" src="./images/home/wanna-login.svg"
+                                                alt="login" height="80px" width="80px">
+                                            <div class=" col-12 pr-1 dropdown-divider"></div>
+                                            <p class="pr-2 mt-2">Go to <span
+                                                    class="initialism text-uppercase">login</span> or <span
+                                                    class="text-uppercase">register</span> </p>
+                                        </a>
+                                    </div>
+                                    <div id="user"
+                                        class="toggler neumorphism dropdown-menu  align-content-center dropdown-menu-right"
+                                        aria-labelledby="user">
+                                        <a class="dropdown-item-custom nav-link" href="#">Hello, Sang pussy face!</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a title="Go to your account" class="dropdown-item-custom "
+                                            href="notfound-404.html">My account</a>
+                                        <a title="Logout" class="dropdown-item-custom " href="notfound-404.html">Log
+                                            out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         </nav>
         <!-- Navigation bar -->
@@ -109,7 +162,8 @@
 
         </div>
         <button type="button" class="btn btn-outline-dark">Sign-in <i class="fas fa-key"></i></button>
-        <button type="button" class="btn btn-outline-danger">Sign-up<i style="margin-left:10px;" class="fas fa-chevron-right"></i></button>
+        <button type="button" class="btn btn-outline-danger">Sign-up<i style="margin-left:10px;"
+                class="fas fa-chevron-right"></i></button>
 
         <div class="pink-circle-decor" id="circle-1">
 
@@ -154,49 +208,107 @@
                 <h2 class="text-left slogan-title text-uppercase" style="letter-spacing: 4px;">Let's enjoy yourself</h2>
             </div>
             <div class="row">
-                <div class="photo-btn col-sm active-gallery-btn">
-                    <i class="fas fa-image"></i>
-                    <span class="text-btn">Photos</span>
+                <div class="btn photo-btn col-sm">
+                    <span>IMAGE TAP</span>
                 </div>
-                <div class="video-btn col-sm active-gallery-btn">
-                    <i class="far fa-file-video"></i>
-                    <span class="text-btn">Videos</span>
+                <div class="btn  video-btn col-sm">
+                    <span>VIDEO TAP</span>
                 </div>
             </div>
             <div class="row" style="margin-top: 40px !important; width: 100%;">
-                <div class="col-7 image-video-container ">
-                    <div class="img">
+                <div class="col-lg-8 col-md-8 col-sm-12 image-video-container ">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/1.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/2.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/3.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/4.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/5.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/6.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/7.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/8.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/9.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img-card">
                         <img src="Assets/Images/Gallery/10.png" alt="">
+                        <div class="card__text">
+                            <p class="card__title"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-download"></i></button></p>
+                            <p class="card__body"><button type="button" class="btn btn-outline-secondary"><i
+                                        class="far fa-edit"></i></button></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 info-container offset-1"
+                <div class="col-lg-3 col-md-3 col-sm-12 info-container offset-1"
                     style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                     <div class="avt-container">
                         <img width="160" height="160" src="Assets/Images/Gallery/avtImg.png" alt="avatar-image">
@@ -336,73 +448,6 @@
             </div>
         </div>
     </section>
-    <section style="background-color: #ffffff;" class="price-section">
-        <div style="text-align:center; " class="price-container">
-            <h4 style="text-transform:capitalize; font-family: semiBold; font-weight: 800;font-size: 56px; ">multiple
-                pricing options</h4>
-            <p style="font-family: regular; font-size: 26px;">
-                We've prepared pricing plans for all budgets so you can get started right away.
-            </p>
-            <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.15);" class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="pricing-item">
-                        <h3>1 DAY</h3>
-                        <div class="pricing-content">
-                            <span class="price-number">5000</span>
-                            <span class="percentage-discount">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="button-request">
-                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
-                        <span class="Poppins">REQUEST</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="pricing-item">
-                        <h3>1 DAY</h3>
-                        <div class="pricing-content">
-                            <span class="price-number">30.000</span>
-                            <span class="percentage-discount">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="button-request">
-                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
-                        <span class="Poppins">REQUEST</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="pricing-item">
-                        <h3>1 DAY</h3>
-                        <div class="pricing-content">
-                            <span class="price-number">120.000</span>
-                            <span class="percentage-discount">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="button-request">
-                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
-                        <span class="Poppins">REQUEST</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="pricing-item">
-                        <h3>1 DAY</h3>
-                        <div class="pricing-content">
-                            <span class="price-number">1tr247</span>
-                            <span class="percentage-discount">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="button-request">
-                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
-                        <span class="Poppins">REQUEST</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="about-us-section">
         <div class="about-us-container">
             <div class="row">
@@ -465,6 +510,74 @@
             </div>
         </div>
     </section>
+    <section style="background-color: #ffffff;" class="price-section">
+        <div style="text-align:center; " class="price-container">
+            <h4 style="text-transform:capitalize; font-family: semiBold; font-weight: 800;font-size: 56px; ">multiple
+                pricing options</h4>
+            <p style="font-family: regular; font-size: 26px;">
+                We've prepared pricing plans for all budgets so you can get started right away.
+            </p>
+            <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.15);" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 DAY</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">5000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 WEEK</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">30.000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 MONTH</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">120.000</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="pricing-item">
+                        <h3>1 YEAR</h3>
+                        <div class="pricing-content">
+                            <span class="price-number">1tr247</span>
+                            <span class="percentage-discount">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-request">
+                        <img src="Assets/Images/Pricing/cartSelected.png" alt="cart-icon">
+                        <span class="Poppins">REQUEST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-container">
             <div class="customized-row-footer">

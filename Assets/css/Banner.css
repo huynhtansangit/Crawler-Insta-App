@@ -251,7 +251,7 @@
     border-bottom:4px #FF0000  solid;
     border-radius: 5px;
     width: 442px;
-    height: 54px;
+    height: 54px !important;
     text-align: left;
     font-size: 20px !important;
     
@@ -339,7 +339,7 @@
     70% { transform: rotateX(180deg) ; }
     100% { transform: rotate3d(180deg) ; }
 }
-/* .banner:after {
+.banner:after {
     animation: shine 4s ease-in-out  infinite;
   animation-fill-mode: forwards;  
   content: "";
@@ -359,7 +359,7 @@
     rgba(255, 255, 255, 0.5) 92%,
     rgba(255, 255, 255, 0.0) 100%
   );
-} */
+}
 @keyframes shine{
     10% {
       opacity: 1;
@@ -377,3 +377,5 @@
     }
   }
  /* End setting */
+ 
+ /* ENd res */
