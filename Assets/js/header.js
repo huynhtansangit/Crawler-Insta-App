@@ -1,4 +1,8 @@
 
+window.setTimeout(function(){
+    document.getElementById("gallery-section").scrollIntoView();
+},1000)
+
 $(".submit-btn").click(function (e) { 
     e.preventDefault();
     $("nav").fadeToggle(400);   
