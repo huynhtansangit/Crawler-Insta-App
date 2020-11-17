@@ -6,50 +6,52 @@ $(document).ready(function () {
     $(".storage-tab").attr( "style", "display: none !important;" ); 
     $("#picture-storage-container").show();
     
-    // For swiper
-    new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+    // For swiper, tạm thời đang bỏ, nếu trong tương lai không cần nữa sẽ xóa.
+    // new Swiper('.swiper-container', {
+    //     // Optional parameters
+    //     direction: 'vertical',
+    //     loop: true,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+    //     // If we need pagination
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //     },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+    //     // Navigation arrows
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+    //     // And if we need scrollbar
+    //     scrollbar: {
+    //         el: '.swiper-scrollbar',
+    //     },
 
-        // Prevent not changing width anymore
-        slidesPerView:'auto'
-    })
+    //     // Prevent not changing width anymore
+    //     slidesPerView:'auto'
+    // })
 
 
     // DECLARE HELPER FUNCTION
     function showStorageTab(clickedBtn){
-        let idClickedBtn = clickedBtn.attr('id');
+        // Vì phải sử dụng lại các tên như video-customized-btn nên sẽ dùng class thay vì id
+        // Vì vậy phải xử lý click là kiếm xem có tên class này trong mớ class ko.
+        let classClickedBtn = clickedBtn.attr('class');
         
         // Ẩn tất cả các tab, không thể dùng .hide() vì bị swiper không cho => phải dùng important
         $(".storage-tab").attr( "style", "display: none !important;" )
 
-        // Ẩn các arrow cũ đi
-        $(".customized-btn-arrow-place-holder ").removeClass("selected-customized-btn-arrow");
+        // // Ẩn các arrow cũ đi
+        // $(".customized-btn-arrow-place-holder ").removeClass("selected-customized-btn-arrow");
 
         // Hiện mỗi tab click
-        if(idClickedBtn === 'profile-customized-btn'){
+        if(classClickedBtn.includes('profile-customized-btn')){
             $("#profile-storage-container").show();
             // Và show arrow mới.
             $("#profile-arrow-place-holder").addClass("selected-customized-btn-arrow"); //select nút mới.
         }
-        else if(idClickedBtn === 'picture-customized-btn'){
+        else if(classClickedBtn.includes('picture-customized-btn')){
             $("#picture-storage-container").show();
 
             $("#picture-arrow-place-holder").addClass("selected-customized-btn-arrow"); //select nút mới.

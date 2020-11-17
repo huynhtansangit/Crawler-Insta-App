@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+section{
+    position: relative !important;
+}
+
 .storage-container,.profile-container {
     position: relative;
     background-image: url("../Images/Store/colorGradient\ \(2\).png");
@@ -18,18 +29,31 @@
     padding-bottom: 1rem;
 }
 
+/* Css cho customized-btn dạng nằm ngang. */
+.storage-container ul{
+    margin-bottom: 0.2rem;
+}
+
+.horizontal-wrapper-customized-btn{
+    margin: 1rem 4.2rem;
+}
+
+.horizontal-wrapper-customized-btn .customized-btn::after{
+    content: none;
+}
+/* Hết css cho customized-btn ngang. */
+
 .downloaded-img{
-    width: 16.5rem;
+    width: 25.5rem;
     height: 17.1rem;
     object-fit: cover;
     vertical-align: middle;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
 }
 
 #profile-storage-container, #picture-storage-container, #video-storage-container{
     justify-content: center;
     background-color: white;
-    height: 100%;
     padding: 1.5rem 0;
     width: 101.1rem !important;
     height: 45rem;
@@ -44,7 +68,7 @@
 input{
     border-bottom: solid 0.2rem rgb(204, 1, 1) !important;
 
-    height: 4.5rem !important;
+    height: 3.5rem !important;
 }
 .btn-apply{
     background-color: #212B36 !important;
@@ -95,39 +119,13 @@ input{
 .selected-customized-btn:hover {
     background-color: white;
 }
-<<<<<<< HEAD
-=======
 
-.column-place-holder-arrow{
-    display: flex !important;
-    flex-flow: column wrap !important;
-    align-items: center !important;
-    justify-content: center;
-}
-
-.customized-btn-arrow-place-holder{
-    height: 8.4rem;
-    align-items: center !important;
-}
-
-.selected-customized-btn-arrow {
-    /* content: ''; */
-    background-image: url("../Images/Store/polygon-transparent-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 40px;
-    height: 65px;
-    z-index:1;
-}
-
->>>>>>> 69896537d32555555c6b30b8f8116a02eab6cb97
 .icon-customized-btn{
     width: 2.1rem;
     height: 2.1rem;
 }
 
-.wrapper-customized-btn{
+.vertical-wrapper-customized-btn{
     position: relative;
     
     /* Edit cái này để cho nó lùi qua trái như ban đầu. */
@@ -173,4 +171,121 @@ p, label, a {
 /* IMPORTANT: Ghi đè lại thư viện Swiper để hiển thị nút chọn bị lỗi */
 .swiper-container{
     z-index: auto;
+}
+
+.swiper-button-next::after{
+    margin-right: 10rem;
+}
+
+.swiper-button-prev::after{
+    margin-left: 5rem;
+}
+
+.storage-customized-border{
+    border-bottom: #707070 solid 0.2rem;
+}
+.storage-tab .row{
+    height:45rem;
+}
+
+@media only screen and (max-width: 1920px) {
+    .storage-width-smaller-992{
+        display: none;
+    }
+
+    .horizontal-wrapper-customized-btn{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1442px) {
+    #you-can-find-downloaded-stuff-here{
+        width: 62rem;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    #you-can-find-downloaded-stuff-here{
+        width: 45rem;
+        height: auto;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    #you-can-find-downloaded-stuff-here{
+        width: 54.5rem;
+        height: auto;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .storage-customized-border{
+        /* Xoa border */
+        border-bottom: #707070 solid 0;
+    }
+    #you-can-find-downloaded-stuff-here{
+        width: 45rem;
+        height: auto;
+    }
+    /* Khi width cua storage nho hon 922px thi se responsive
+        an cai storage > 922 di, hien cai nho hon thoi
+    */
+    .storage-width-smaller-992{
+        display: contents;
+    }
+    .storage-width-grater-992{
+        display: none;
+    }
+    .btn-apply{
+        max-width: 6rem;
+        max-height: 2rem;
+    }
+
+    /* ẩn cái vertical-wrapper-customized-btn hiện horizontal-wrapper-customized-btn*/
+    .horizontal-wrapper-customized-btn{
+        display: flex;
+    }
+    .vertical-wrapper-customized-btn{
+        display: none !important;
+    }
+
+    /* điều chỉnh lại kích thước margin cho wrapper-storage */
+    .wrapper-storage{
+        margin: 0 2rem !important;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .wrapper-storage{
+        /* margin: 0 2rem !important; */
+    }
+
+    #you-can-find-downloaded-stuff-here{
+        width: 34.5rem;
+        height: auto;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .wrapper-storage{
+        margin: 0 2rem !important;
+    }
+
+    #you-can-find-downloaded-stuff-here{
+        display: none;
+    }
+
+    .avatar-img{
+        max-width: 5.78rem;
+        max-height: 5.78rem;
+    }
+
+    p, label, a, button {
+        font-size: x-small;
+    }
+
+    .downloaded-img{
+        width: 11rem;
+        height: 11.35rem;
+        margin: 0;
+    }
 }
