@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // DECLARE INITIAL ACTION (LIKE HIDING SOME TABS, LOADING SOMETHING)
-
+    
     // ẩn tất cả các edit-pic-option.
     $(".edit-pic-option").hide();
     $("#edit-pic-text-option").show();
@@ -33,4 +33,10 @@ $(document).ready(function () {
         // show cái mới được chọn.
         showEditPicOption($(this));
     });
+
+    // Xử lý range bar khi điều chỉnh sẽ có edit hình real-time
+    $("input[type='range']").on('input', function(){
+        //Xử lý với Id ở đây.
+        console.log($(this).attr('id'));
+    })
 })
