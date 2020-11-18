@@ -188,6 +188,77 @@ p, label, a {
     height:45rem;
 }
 
+/* Effect in gallery */
+.image-video-container .img-card{
+    position: relative;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+    border-radius: 2px;
+    display: block;
+    transition: opacity ease-out 250ms;
+    background: black;
+}
+.img-card::before, .img-card::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+    z-index: 0;
+}
+.img-card::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+}
+.img-card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+}
+.img-card:hover::before {
+    transform: scale(1.05, 1);
+}
+.img-card:hover::after {
+    transform: scale(1, 1.05);
+}
+.img-card:hover img{
+    opacity: 0.4;
+}
+.card__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+    z-index: 10;
+}
+.card__text .btn-outline-secondary {
+    transform: scale(1);
+    margin: 10px;
+}
+.img-card:hover .card__text {
+    opacity: 1;
+}
+.card__title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+}
+.fa-download,.fa-edit{
+    color: white !important;
+    font-size: 24px !important;
+}
+/* ---- btn effect ----- */
+/* End effect */
+
+/* Responsive bên dưới */
 @media only screen and (max-width: 2100px) {
     .horizontal-wrapper-customized-btn{
         display: none;
