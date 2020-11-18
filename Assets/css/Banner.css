@@ -13,7 +13,7 @@
     position: absolute !important;
     z-index: 10;
     top: 70px;
-    left: 78%;
+    left: 77%;
     background-color: white;
     font-family: Poppins;
     font-weight: 800;
@@ -72,10 +72,10 @@
     position: absolute;
     background-image: url("../Images/Banner/haf-circle.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 433px;
     height:400px;
-    left: -220px !important;
+    left: -220px ;
     top: 222px;
     z-index: -1;
 }
@@ -205,7 +205,6 @@
  .dropdown-banner{
     top: 589px;
     left: 261px;
-    width: 542px !important;
  }
  .dropdown-banner button{
     position: relative;
