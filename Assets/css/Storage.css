@@ -35,7 +35,7 @@ section{
 }
 
 .horizontal-wrapper-customized-btn{
-    margin: 1rem 4.2rem;
+    margin: 0.2rem 2rem;
 }
 
 .horizontal-wrapper-customized-btn .customized-btn::after{
@@ -188,19 +188,38 @@ p, label, a {
     height:45rem;
 }
 
+@media only screen and (max-width: 2100px) {
+    .horizontal-wrapper-customized-btn{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1920px) {
     .storage-width-smaller-992{
         display: none;
     }
 
-    .horizontal-wrapper-customized-btn{
+    /* .horizontal-wrapper-customized-btn{
         display: none;
-    }
+    } */
 }
 @media only screen and (max-width: 1442px) {
     #you-can-find-downloaded-stuff-here{
         width: 62rem;
         height: auto;
+    }
+    
+    .vertical-wrapper-customized-btn p {
+        display: none;
+    }
+
+    .wrapper-storage{
+        margin: 0 0.5rem !important;
+    }
+
+    .avatar-img{
+        max-width: 6.8rem;
+        max-height: 6.8rem;
     }
 }
 @media only screen and (max-width: 1366px) {
@@ -208,12 +227,35 @@ p, label, a {
         width: 45rem;
         height: auto;
     }
+
+    .avatar-img{
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+
+    .icon-customized-btn{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
     #you-can-find-downloaded-stuff-here{
         width: 54.5rem;
         height: auto;
+    }
+
+    /* ẩn cái vertical-wrapper-customized-btn hiện horizontal-wrapper-customized-btn*/
+    .horizontal-wrapper-customized-btn{
+        display: flex;
+    }
+    .vertical-wrapper-customized-btn{
+        display: none !important;
+    }
+
+    /* điều chỉnh lại kích thước margin cho wrapper-storage */
+    .wrapper-storage{
+        margin: 0 2rem !important;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -238,19 +280,6 @@ p, label, a {
     .btn-apply{
         max-width: 6rem;
         max-height: 2rem;
-    }
-
-    /* ẩn cái vertical-wrapper-customized-btn hiện horizontal-wrapper-customized-btn*/
-    .horizontal-wrapper-customized-btn{
-        display: flex;
-    }
-    .vertical-wrapper-customized-btn{
-        display: none !important;
-    }
-
-    /* điều chỉnh lại kích thước margin cho wrapper-storage */
-    .wrapper-storage{
-        margin: 0 2rem !important;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
