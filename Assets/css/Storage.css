@@ -189,7 +189,7 @@ p, label, a {
 }
 
 /* Effect in gallery */
-.image-video-container .img-card{
+#storage-section .image-video-container .img-card{
     position: relative;
 	height: 100%;
 	width: 100%;
@@ -199,7 +199,7 @@ p, label, a {
     transition: opacity ease-out 250ms;
     background: black;
 }
-.img-card::before, .img-card::after {
+#storage-section .img-card::before, #storage-section .img-card::after {
     content: '';
     position: absolute;
     top: 1.25em;
@@ -210,26 +210,26 @@ p, label, a {
     transition: transform ease-out 250ms;
     z-index: 0;
 }
-.img-card::before {
+#storage-section .img-card::before {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scale(0, 1);
 }
-.img-card::after {
+#storage-section .img-card::after {
     border-left: 1px solid white;
     border-right: 1px solid white;
     transform: scale(1, 0);
 }
-.img-card:hover::before {
+#storage-section .img-card:hover::before {
     transform: scale(1.05, 1);
 }
-.img-card:hover::after {
+#storage-section .img-card:hover::after {
     transform: scale(1, 1.05);
 }
-.img-card:hover img{
+#storage-section .img-card:hover img{
     opacity: 0.4;
 }
-.card__text {
+#storage-section .card__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -239,19 +239,19 @@ p, label, a {
     transition: opacity ease-out 250ms;
     z-index: 10;
 }
-.card__text .btn-outline-secondary {
+#storage-section .card__text .btn-outline-secondary {
     transform: scale(1);
     margin: 10px;
 }
-.img-card:hover .card__text {
+#storage-section .img-card:hover .card__text {
     opacity: 1;
 }
-.card__title {
+#storage-section .card__title {
     font-size: 2rem;
     color: white;
     margin-bottom: 0;
 }
-.fa-download,.fa-edit{
+#storage-section .fa-download, #storage-section .fa-edit{
     color: white !important;
     font-size: 24px !important;
 }
